@@ -203,7 +203,7 @@ WITH LastLoginDate_CTE AS
 		,AvgTenureBetweenLastUserBalanceModifiedAtAndLastLoginDate
 		,LedgeredTxCount
 		,AvgMaxUserBalanceEver
-		/*Aşağıdaki fonksiyonlar Kevser ile index hususu konuşulup cubic group by'a dönüştürülebilir-Anıl*/
+		/*Elements of CUBE could be incremented in case of index management-SK*/
 		,LossCountRegisterAndLastDateWithin24Hr						UserCountHadLatestWithin24Hr
 		,LossCountRegisterAndLastDateWithin7Days					UserCountHadLatestWithin7Days
 		,LossCountRegisterAndLastDateWithin30Days					UserCountHadLatestWithin30Days
